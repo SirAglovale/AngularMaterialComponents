@@ -1,0 +1,20 @@
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    font-size: 17px;
+    background-color: #ddd;
+    li {
+        display: inline;
+        a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #01447e;
+        }
+    }
+    li+li:before {
+        padding: 8px;
+        content: ">";
+    }
+}

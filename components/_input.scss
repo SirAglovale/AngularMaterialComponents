@@ -1,0 +1,42 @@
+input {
+    width: calc(100% - 10px);
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px #ddd solid;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    transition: background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+input:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: #999;
+}
+
+input.invalid:focus, input.invalid {
+    border-bottom-color: red;
+}
+
+input.valid:focus, input.valid {
+    border-bottom-color: green;
+}
+
+input.light-text {
+    color: #eee;
+}
+
+input.light-text::-moz-placeholder {
+    color: #eee;
+}
+
+input.light-text::-webkit-input-placeholder {
+    color: #eee;
+}
+
+input.light-text:-ms-input-placeholder {
+    color: #eee;
+}

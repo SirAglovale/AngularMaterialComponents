@@ -1,0 +1,33 @@
+button {
+    transition: color 0.2s ease-in-out, box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+button.round {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+button.right {
+    float: right;
+    margin-left: auto;
+}
+
+button.left {
+    float: left;
+    margin-right: auto;
+}
+
+button.center {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.card .action button.round {
+    transform: translate(0, -25px);
+}
+

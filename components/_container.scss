@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+@for $i from 1 through 12 {
+    .w-#{$i} {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @for $i from 1 through 12 {
+        .w-#{$i} {
+            margin: 10px;
+            width: calc(#{($i / 12) * 100}% - 20px);
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 900px;
+        margin-left: calc(50% - 450px);
+        margin-right: calc(50% - 450px);
+    }
+}
