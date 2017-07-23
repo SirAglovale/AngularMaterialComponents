@@ -25,7 +25,9 @@ Colo(u)rs in Material Design are defined on the google Material design page as R
 
 ## Depth
 One of the main features of material design is the depth of materials this can be denoted in this framework also, there are 12 levels of depth
+
 1 = Far from the user
+
 12 = Close to the user
 
 ```HTML
