@@ -54,3 +54,24 @@ This framework does not include a navbar element as of yet, this may be coming s
     </div>
 </div>
 ```
+
+## Containers
+As with a lot of frameworks we need some sort of container, we use the flexbox that is provided by CSS3 and SASS, our containers are divided up into 12 as it is the most divisible number.
+
+```HTML
+<!--Create a container-->
+<div class="container">
+    <!--Create a card of width 1-->
+    <div class="card w-1 dp-3">
+        <!--Do other card stuff in here-->
+    </div>
+    <!--Create a card of width 4-->
+    <div class="card w-4 dp-3">
+        <!--Do other card stuff in here-->
+    </div>
+    <!--Create a card of width 7-->
+    <div class="card w-7 dp-3">
+        <!--Do other card stuff in here-->
+    </div>
+</div>
+```
