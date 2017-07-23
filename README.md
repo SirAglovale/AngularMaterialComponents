@@ -22,3 +22,19 @@ Colo(u)rs in Material Design are defined on the google Material design page as R
 
 </div>
 ```
+
+## Titlebar
+This framework does not include a navbar element as of yet, this may be coming soon depending on my programming requirements. So far we have a titlebar which can be used as such
+
+```HTML
+<!--Define that a titlebar is being used. You should probably add a foreground and background colour to this and also a depth-->
+<div class="titlebar dp-2 bg-blue-800 color-light-text-primary">
+    <!--Now we insert a container to allow for the titlebar to dynamically resize with the rest of the webpage.-->
+    <div class="container">
+        <!--We add an image to denote the brand, this can be ommitted however I advise that you put your company logo here-->
+        <img src="https://yourdomain.com/logo.png">
+        <!--We also add a title that describes what the page does-->
+        <span>Page Title</span>
+    </div>
+</div>
+```
