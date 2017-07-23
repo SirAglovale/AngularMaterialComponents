@@ -29,7 +29,7 @@ button.center {
   margin-right: 0 auto; }
 
 .card .action button.round {
-  transform: translate(0, -35px); }
+  transform: translate(0, -25px); }
 
 /**
 * The material colors are provided by shuhei. https://github.com/shuhei/material-colors
@@ -4319,7 +4319,7 @@ button:focus.dp-12 {
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12), 0 24px 48px rgba(0, 0, 0, 0.24); }
 
 .card {
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -4341,11 +4341,168 @@ button:focus.dp-12 {
   justify-content: center; }
 
 .titlebar {
-  height: 60px; }
+  height: 60px;
+  line-height: 60px; }
   .titlebar img {
     height: 40px;
-    margin: 10px; }
+    margin: 10px;
+    float: left; }
   .titlebar span {
-    height: 40px;
+    height: 100%;
     line-height: 40px;
-    margin: 10px; }
+    margin: 10px;
+    float: left; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+
+.w-1 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-2 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-3 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-4 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-5 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-6 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-7 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-8 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-9 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-10 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-11 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+.w-12 {
+  margin: 10px;
+  width: calc(100% - 20px); }
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .w-1 {
+    margin: 10px;
+    width: calc(8.33333% - 20px); }
+  .w-2 {
+    margin: 10px;
+    width: calc(16.66667% - 20px); }
+  .w-3 {
+    margin: 10px;
+    width: calc(25% - 20px); }
+  .w-4 {
+    margin: 10px;
+    width: calc(33.33333% - 20px); }
+  .w-5 {
+    margin: 10px;
+    width: calc(41.66667% - 20px); }
+  .w-6 {
+    margin: 10px;
+    width: calc(50% - 20px); }
+  .w-7 {
+    margin: 10px;
+    width: calc(58.33333% - 20px); }
+  .w-8 {
+    margin: 10px;
+    width: calc(66.66667% - 20px); }
+  .w-9 {
+    margin: 10px;
+    width: calc(75% - 20px); }
+  .w-10 {
+    margin: 10px;
+    width: calc(83.33333% - 20px); }
+  .w-11 {
+    margin: 10px;
+    width: calc(91.66667% - 20px); }
+  .w-12 {
+    margin: 10px;
+    width: calc(100% - 20px); } }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 900px;
+    margin-left: calc(50% - 450px);
+    margin-right: calc(50% - 450px); } }
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  font-size: 17px;
+  background-color: #ddd; }
+  ul.breadcrumb li {
+    display: inline; }
+    ul.breadcrumb li a {
+      color: #0275d8;
+      text-decoration: none; }
+    ul.breadcrumb li a:hover {
+      color: #01447e; }
+  ul.breadcrumb li + li:before {
+    padding: 8px;
+    content: ">"; }
+
+input {
+  width: calc(100% - 10px);
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px #ddd solid;
+  background-color: transparent;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; }
+
+input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: #999; }
+
+input.invalid:focus, input.invalid {
+  border-bottom-color: red; }
+
+input.valid:focus, input.valid {
+  border-bottom-color: green; }
+
+input.light-text {
+  color: #eee; }
+
+input.light-text::-moz-placeholder {
+  color: #eee; }
+
+input.light-text::-webkit-input-placeholder {
+  color: #eee; }
+
+input.light-text:-ms-input-placeholder {
+  color: #eee; }
