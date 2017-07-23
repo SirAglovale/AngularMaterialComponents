@@ -75,3 +75,29 @@ As with a lot of frameworks we need some sort of container, we use the flexbox t
     </div>
 </div>
 ```
+
+## Cards
+Cards are a late addition to the whole web 2.0 styling of things, however they are still very important and have therefore been included in the first edition of this framework.
+
+The card object has up to 3 sub sections: title; body; action;
+
+```HTML
+<!--Define a card in the DOM, usually this is done inside a container so I will use the syntax as such-->
+<div class="card dp-3 w-6">
+    <!--This is the cards title, this is a larger font and can have a different colour e.t.c-->
+    <div class="title">
+        Welcome Card
+    </div>
+    <!--This is the cards body, this is where you should be more descript in your writing-->
+    <div class="body">
+        Lorem Ipsum
+    </div>
+    <!--This is where the action happens, i.e. follow link. N.B. Certain button classes can be applied to force the button to overlap to show it is a different material-->
+    <div class="action">
+        <!--This is a non overlap button-->
+        <button class="dp-4">Click Me</button>
+        <!--This is the overlap button-->
+        <button class="dp-4 round right">&gt;</button>
+    </div>
+</div>
+```
