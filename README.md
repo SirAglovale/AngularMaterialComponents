@@ -23,6 +23,20 @@ Colo(u)rs in Material Design are defined on the google Material design page as R
 </div>
 ```
 
+## Depth
+One of the main features of material design is the depth of materials this can be denoted in this framework also, there are 12 levels of depth
+1 = Far from the user
+12 = Close to the user
+
+```HTML
+<div class="dp-1">
+    This div is far away from the user
+</div>
+<div class="dp-12">
+    This div is close to the user
+</div>
+```
+
 ## Titlebar
 This framework does not include a navbar element as of yet, this may be coming soon depending on my programming requirements. So far we have a titlebar which can be used as such
 
