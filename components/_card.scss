@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.2s ease-in-out, box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .card .title {
@@ -22,4 +23,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.card.active {
+    transform: translate(0, 0);
+}
+
+.card.inactive {
+    transform: translate(-110%, 0);
 }
