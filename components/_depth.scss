@@ -13,6 +13,14 @@
         box-shadow: 0 #{$i*2}px #{$i*4}px rgba(0, 0, 0, 0.12), 0 #{$i*2}px #{$i*4}px rgba(0, 0, 0, 0.24);
     }
 
+    .dp-#{$i}.sidebar {
+        box-shadow: none;
+        z-index: 20;
+    }
+    .dp-#{$i}.navbar {
+        z-index: 21;
+    }
+
     button.dp-#{$i} {
         z-index: $i;
         -webkit-box-shadow: 0 #{$i}px #{$i*2}px rgba(0, 0, 0, 0.12), 0 #{$i}px #{$i*2}px rgba(0, 0, 0, 0.24);

@@ -1,0 +1,49 @@
+.sidebar {
+    position: fixed;
+    width: 60px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: calc(100% - 60px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    .spacer {
+        height: 30px;
+        width: 60px;
+    }
+    .item {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .item:after {
+        content: "";
+        display: block;
+        width: 150px;
+        padding-left: 60px;
+        height: 100%;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.75);
+        transition: all 0.5s ease;
+        transform: translate(-100%, -100%);
+        text-decoration: none;
+        font-size: 12px;
+        text-align: center;
+        content: attr(data-tooltip);
+        border-radius: 0 3px 3px 0;
+    }
+    .item:hover:after {
+        transform: translate(0, -100%);
+        opacity: 1;
+    }
+}
+.sidebar.short {
+    top: 60px;
+}

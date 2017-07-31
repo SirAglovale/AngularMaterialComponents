@@ -1,0 +1,26 @@
+.content.content-sidebar {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 19;
+}
+
+.content.content-navbar {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    z-index: 19;
+}
+
+.content.content-navbar.content.content-sidebar {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    z-index: 19;
+}

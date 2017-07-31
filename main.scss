@@ -8,6 +8,9 @@ body {
     overflow-y: scroll;
 }
 
+//Balloon.css credit to https://github.com/kazzkiq/balloon.css
+@import "./config/balloon";
+
 @import "./components/_button";
 @import "./components/_color";
 @import "./components/_depth";
@@ -18,3 +21,4 @@ body {
 @import "./components/_input";
 @import "./components/_table";
 @import "./components/_sidebar";
+@import "./components/_content";
