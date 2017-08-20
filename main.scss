@@ -22,3 +22,7 @@ body {
 @import "./components/_table";
 @import "./components/_sidebar";
 @import "./components/_content";
+
+.hidden {
+    display: none;
+}
